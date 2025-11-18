@@ -1,6 +1,13 @@
 import axios from 'axios';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+const USE_LOCAL = import.meta.env.VITE_USE_LOCAL_API === 'true';
+
+const API_URL = USE_LOCAL
+    ? 'http://localhost:3001'
+    : 'https://flex-living-backend-wheat.vercel.app';
+
+console.log('🔍 API_URL being used:', API_URL);
+console.log('🔍 Using local backend:', USE_LOCAL);
 
 const api = axios.create({
     baseURL: `${API_URL}/api`,
