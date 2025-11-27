@@ -212,11 +212,7 @@ flexliving-reviews/
 │   └── vercel.json
 │
 └── Documentation
-    ├── README.md (this file)
-    ├── PROJECT_TECHNICAL_DOCUMENTATION.md
-    ├── DESIGN_PATTERNS.md
-    ├── INTERVIEW_PREPARATION.md
-    └── REACT_HOOKS_GUIDE.md
+    ├── README.md 
 ```
 
 ---
